@@ -18,7 +18,7 @@ public class StudentsController {
     }
 
     @RequestMapping("/students/{id}")
-    public Student getStudent(@RequestParam int id){
+    public Student getStudent(@PathVariable int id){
         return dataManager.getStudent(id);
     }
 
